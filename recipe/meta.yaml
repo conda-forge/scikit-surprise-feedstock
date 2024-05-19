@@ -13,7 +13,7 @@ source:
 
 build:
   number: 2
-  script: pip install . --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -25,10 +25,11 @@ requirements:
   host:
     - python
     - setuptools
+    - wheel
     - cython
     - numpy
+    - pip
   run:
-    - setuptools
     - python
     - {{ pin_compatible('numpy') }}
     - joblib
