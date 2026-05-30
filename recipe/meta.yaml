@@ -1,6 +1,6 @@
 {% set name = "scikit-surprise" %}
 {% set version = "1.1.5" %}
-{% set sha256 = "bb64722d0e33f2a49738ada86dc20e0a725027f7dccc374a14b6ca743180171e" %}
+{% set sha256 = "371ac455b06fa6c996960863bfedfe8ec3cd03e670c066f862d20c9de70a413d" %}
 
 package:
   name: {{ name|lower }}
