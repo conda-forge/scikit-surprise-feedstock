@@ -1,17 +1,17 @@
 {% set name = "scikit-surprise" %}
-{% set version = "1.1.4" %}
-{% set sha256 = "130c45feaee9de4b8cba0aff413ad9b51b2d5c5c90d41aee4759e00059913752" %}
+{% set version = "1.1.5" %}
+{% set sha256 = "371ac455b06fa6c996960863bfedfe8ec3cd03e670c066f862d20c9de70a413d" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scikit_surprise-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/scikit_surprise-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
